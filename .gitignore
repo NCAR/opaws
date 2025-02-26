@@ -1,0 +1,7 @@
+*.o
+*.mod
+
+# exectutables
+mosaic_2_dart
+x.clutter_stats
+x.oban

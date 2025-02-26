@@ -11,14 +11,14 @@
 
 # netCDF4 libs - you need to fill in the blanks
 #
-NETCDFINC = -I/   /    /netcdf4-64/include
-NETCDFLIB = -L/   /    /netcdf4-64/lib -lm -lnetcdf -L/   /    /hdf5/lib -lhdf5_hl -lhdf5 -lz
+NETCDFINC = -I/opt/local/include
+NETCDFLIB = -L/opt/local/lib -lm -lnetcdff -lhdf5_hl -lhdf5 -lz
 
 
 # netCDF3 libs - you need to fill in the blanks
 #
-NETCDFINC = -I/usr/local/netcdf3_gfortran/include
-NETCDFLIB = -L/usr/local/netcdf3_gfortran/lib -lnetcdff -lnetcdf
+#NETCDFINC = -I/usr/local/netcdf3_gfortran/include
+#NETCDFLIB = -L/usr/local/netcdf3_gfortran/lib -lnetcdff -lnetcdf
 
 #=====================================================================================================
 # Fortran and C compiler information - various configurations are setup, try and find one close
@@ -27,13 +27,13 @@ NETCDFLIB = -L/usr/local/netcdf3_gfortran/lib -lnetcdff -lnetcdf
 
 #=====>> Gfortran 
 # 
-FC   = gfortran -m64 -g -O0 -Wl,-stack_size,10000000 -ffixed-line-length-132 -Wunused -Wuninitialized
+FC   = gfortran -m64 -g -O0 -Wl,-stack_size,10000000 -ffixed-line-length-132 -Wunused -Wuninitialized -fallow-argument-mismatch
 CC   = gcc
 CFLAGS = -m64 -c -g -I. -DLONG32 -DUNDERSCORE -DLITTLE -Wunused -Wuninitialized
 
-FC   = gfortran -m32 -g -O0 -ffixed-line-length-132
-CC   = gcc
-CFLAGS = -m32 -c -g -I. -DLONG32 -DUNDERSCORE -DLITTLE
+#FC   = gfortran -m32 -g -O0 -ffixed-line-length-132
+#CC   = gcc
+#CFLAGS = -m32 -c -g -I. -DLONG32 -DUNDERSCORE -DLITTLE
 
 #FC   = ifort -m32 -extend_source
 #CC   = gcc

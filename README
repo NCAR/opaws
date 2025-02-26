@@ -53,7 +53,7 @@ BUILD instructions
 
 3.  Setup proper links to the netCDF libs.  The fortran needs the include directory to use the netcdf module interface.
 
-4.  Compile by typing "make".  Two executables are built:  x.oban and x.clutter_stats
+4.  Compile by typing "make".  Three executables are built:  x.oban and x.clutter_stats and  mosaic_2_dart  
 
 ================================================================================
 
