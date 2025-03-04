@@ -1,0 +1,4 @@
+foray_data/ncswp_KCYS_20090605_205811.742_v400_s002_000.5_SUR_.nc
+foray_data/ncswp_KCYS_20090605_205850.893_v400_s004_000.9_SUR_.nc
+foray_data/ncswp_KCYS_20090605_205930.097_v400_s006_001.3_SUR_.nc
+foray_data/ncswp_KCYS_20090605_205951.891_v400_s007_001.8_SUR_.nc
